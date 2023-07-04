@@ -1,0 +1,2 @@
+def f1(list1):
+  return [i for i in list1 if ((i%2)==0)]
