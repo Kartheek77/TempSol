@@ -1,0 +1,16 @@
+def timer(func):
+    def i1(*args, **kwargs):
+        begin = time.time()        
+        func(*args, **kwargs)
+        end = time.time()
+        print(end-begin) 
+    return i1
+
+import time
+
+@timer
+def my_function():
+    # Function code goes here
+    time.sleep(2)
+
+my_function()
