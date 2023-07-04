@@ -1,0 +1,10 @@
+def calculate_mean(numbers):
+    total = 0
+    for num in numbers:
+      total+= num
+    count = len(numbers)
+    if(count==0):
+      return 0
+    else:
+      mean = total / count
+      return mean
